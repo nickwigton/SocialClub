@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "commonjs",
+    "outDir": "dist",
+    "lib": ["es2018", "es2017.object"],
+    "sourceMap": false,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "noImplicitAny": true,
+    "experimentalDecorators": true
+  },
+  "include": [
+    "./Server/**/*.ts",
+    "./Wrapper/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "Docs",
+    "Bot"
+  ]
+}
