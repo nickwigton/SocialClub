@@ -9,7 +9,7 @@
     "docs:load": "node ./dist/Docs/index.js --load",
     "docs:start": "node ./dist/Docs/index.js --start",
     "docs:build": "node ./dist/Docs/index.js --build",
-    "server": "node ./dist/Server/index.js",
+    "server": "node ./dist/Server/index.js --start",
     "bot": "node ./dist/Bot/index.js"
   },
   "author": {

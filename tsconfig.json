@@ -12,7 +12,8 @@
   },
   "include": [
     "./Server/**/*.ts",
-    "./Wrapper/**/*.ts"
+    "./Wrapper/**/*.ts",
+    "./Example/**/*.ts"
   ],
   "exclude": [
     "node_modules",
