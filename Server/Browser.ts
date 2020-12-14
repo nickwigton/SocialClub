@@ -1,6 +1,7 @@
 import * as puppeteer from 'puppeteer';
 import Server from './index';
 import { RequestOptions } from './Request';
+import * as config from './config.json';
 
 // See https://github.com/DefinitelyTyped/DefinitelyTyped/issues/24419
 declare module 'puppeteer' {
@@ -27,20 +28,42 @@ export default class Browser {
    * @param server Refrense to the server
    * @param launchOptions Optional puppeteer launch options
    */
-  constructor(protected server: Server, launchOptions: puppeteer.LaunchOptions = {}) {
+  constructor(protected server: Server, launchOptions: puppeteer.LaunchOptions = { userDataDir: 'C:\\etc\\puppeteercache' }) {
     this.init(launchOptions);
     this.setInterval();
   }
 
   /**
-   * Private async method to launche the browser to the login page
-   * @param launchOptions The puppeer lauch options from the constructor function
+   * Private async method to launch the browser to the login page
+   * @param launchOptions The puppeteer launch options from the constructor function
    */
   private async init(launchOptions: puppeteer.LaunchOptions) {
     this.browser = await puppeteer.launch({ headless: false, ...launchOptions });
     this.reloadPage = await this.browser.newPage();
     await this.reloadPage.goto('https://signin.rockstargames.com/signin/user-form?cid=socialclub', { waitUntil: 'networkidle2' });
-    await this.wait(15000).then(() => this.waitForLogin());
+    await this.wait(1000);
+    if (await this.reloadPage.$('[data-ui-name="googleSignInLink"]') !== null) {
+      await this.reloadPage.click('[data-ui-name="googleSignInLink"]');
+      await this.reloadPage.waitForNavigation({
+        waitUntil: 'networkidle0',
+      });
+      await this.wait(3000);
+      if (await this.reloadPage.$('input[type="email"]') !== null) {
+        await this.reloadPage.type('input[type="email"]', config.SC_USERNAME);
+        await this.reloadPage.keyboard.press(String.fromCharCode(13));
+        await this.reloadPage.waitForSelector('input[type="password"]');
+        await this.reloadPage.waitFor(2000);
+        await this.reloadPage.type('input[type="password"]', config.SC_PASSWORD);
+        await this.reloadPage.keyboard.press(String.fromCharCode(13));
+        await this.reloadPage.waitForNavigation({
+          waitUntil: 'networkidle0',
+        }).then(() => this.waitForLogin());
+      } else {
+        this.waitForLogin();
+      }        
+    } else {
+        this.waitForLogin();
+    }
   }
 
   /**
@@ -59,7 +82,7 @@ export default class Browser {
    */
   public fetch(url: string, options: RequestOptions, json: boolean): Promise<{ status: boolean, e?: Error, code: number, body: any }> {
     return this.page.evaluate(async (url: string, options: any, json: any) => {
-      console.log('Incomming', url, json, options);
+      console.log('Incoming', url, json, options);
       try {
         const res = await fetch(url, options);
         if(res.status > 250 || res.status < 200) {

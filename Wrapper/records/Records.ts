@@ -1,5 +1,6 @@
 import { StatsFetch as Stats } from '../../Server/Endpoints/Stats';
 import Client from '../Client';
+import { Vehicle } from '../structures/Vehicle';
 
 /**
  * Class to get different records from players
@@ -23,47 +24,47 @@ export default class Records {
     if(this.parseToInt(info.cash['Picked up']) + tmp > 55000000){
       // If so, he should be marked for modding for more than 25M per catogory
       // Check for money they picked up
-      msg += (this.parseToInt(info.cash['Picked up']) > 25000000)?'[X] Modded money picked up': '[   ] Modded money picked up';
+      msg += (this.parseToInt(info.cash['Picked up']) > 25000000)?':red_circle:Modded money picked up': 'Modded money picked up';
       msg += ' (' + info.cash['Picked up'] + ')\n';
 
       // Check for income outcome
-      msg += (tmp > 25000000)?'[X] Modded money income-outcome': '[   ] Modded money income-outcome';
+      msg += (tmp > 25000000)?':red_circle:Modded money income-outcome': 'Modded money income-outcome';
       msg += ' (' + info.career['Overall income']+' - ' + info.career['Overall expenses'] + ')\n';
     } else {
       // Otherwise, he isn't modding based on combined stats, so let's just check the 50M
       // Check for money they picked up
-      msg += (this.parseToInt(info.cash['Picked up']) > 50000000)?'[X] Modded money picked up': '[   ] Modded money picked up';
+      msg += (this.parseToInt(info.cash['Picked up']) > 50000000)?':red_circle:Modded money picked up': 'Modded money picked up';
       msg += ' (' + info.cash['Picked up'] + ')\n';
 
       // Check for income outcome
-      msg += (tmp > 50000000)?'[X] Modded money income-outcome': '[   ] Modded money income-outcome';
+      msg += (tmp > 50000000)?':red_circle:Modded money income-outcome': 'Modded money income-outcome';
       msg += ' (' + info.career['Overall income']+' - ' + info.career['Overall expenses'] + ')\n';
     }
 
     // Check for to much cash
     tmp = this.parseToInt(info.extra.bank) + this.parseToInt(info.extra.cash);
-    msg += (tmp > 100000000 && parseInt(info.extra.level) < 400 || tmp > 200000000)?'[X] Modded money possession': '[   ] Modded money possession';
+    msg += (tmp > 100000000 && parseInt(info.extra.level) < 400 || tmp > 200000000)?':red_circle:Modded money possession': 'Modded money possession';
     msg += ' (' + info.extra.bank + ' + ' + info.extra.cash + ')\n';
 
     // Check for aimbot by accuracy
-    msg += (this.parseToInt(info.combat.Accuracy) > 60)?'[X] Aimbot by accuracy': '[   ] Aimbot by accuracy';
+    msg += (this.parseToInt(info.combat.Accuracy) > 60)?':red_circle:Aimbot by accuracy': 'Aimbot by accuracy';
     msg += ' (' + info.combat.Accuracy + ')\n';
 
     // Check for aimbot by headshots players
-    msg += (this.parseToInt(info.combat['Player headshot kills']) > 0.7*this.parseToInt(info.combat['Player kills']))?'[X] Aimbot by heashot players': '[   ] Aimbot by headshots players';
+    msg += (this.parseToInt(info.combat['Player headshot kills']) > 0.7*this.parseToInt(info.combat['Player kills']))?':red_circle:Aimbot by heashot players': 'Aimbot by headshots players';
     msg += ' (' + info.combat['Player headshot kills'] + '/' + info.combat['Player kills'] + ')\n';
 
     // Check for aimbot by headshots total
-    msg += (this.parseToInt(info.combat['Headshot kills']) > 0.7*this.parseToInt(info.combat.Kills))?'[X] Aimbot by overall headshots': '[   ] Aimbot by overall headshots';
+    msg += (this.parseToInt(info.combat['Headshot kills']) > 0.7*this.parseToInt(info.combat.Kills))?':red_circle:Aimbot by overall headshots': 'Aimbot by overall headshots';
     msg += ' (' + info.combat['Headshot kills'] + '/' + info.combat.Kills + ')\n';
 
     // Check for K/D, if someone has an absurd K/D of 15 plus we can flag him for griefing or godmode
-    msg += (this.parseToInt(info.career['Player vs Player Kill / Death ratio']) > 15)?'[X] Godmode based on K/D':'[   ] Godmode based on K/D';
+    msg += (this.parseToInt(info.career['Player vs Player Kill / Death ratio']) > 15)?':red_circle:Godmode based on K/D':'Godmode based on K/D';
     msg += ' (' + info.career['Player vs Player Kill / Death ratio'] + ')\n';
 
     // Check modded stats
     tmp = this.sumSkills(info.skills);
-    msg += (parseInt(info.extra.level) < 75 && tmp >= 700)? '[X] Modded stats' : '[   ] Modded stats';
+    msg += (parseInt(info.extra.level) < 75 && tmp >= 700)? ':red_circle:Modded stats' : 'Modded stats';
     msg += ' (' + tmp + '/800' + ')\n';
 
     // Check modded lvl
@@ -71,7 +72,7 @@ export default class Records {
     const hourss: string = (time.split('h')[0] === '') ? '0' : time.split('h')[0];
     let hours: number = (hourss.split('d ')[1] === '') ? 0 : parseInt(hourss.split('d ')[1]);
     hours += 24 * ((time.split('d')[0] === '') ? 0 : parseInt(time.split('d')[0]));
-    msg += ((parseInt(info.extra.level) > 100 && hours < 75 ) || (parseInt(info.extra.level) >= 100 && parseInt(info.extra.level) > (hours*1.5)))?'[X] Modded level':'[   ] Modded level';
+    msg += ((parseInt(info.extra.level) > 100 && hours < 75 ) || (parseInt(info.extra.level) >= 100 && parseInt(info.extra.level) > (hours*1.5)))?':red_circle:Modded level':'Modded level';
     msg += ' (level ' + parseInt(info.extra.level) + ' in ' + info.career['Time spent in GTA Online'] + ')\n';
 
     return msg;
@@ -130,6 +131,15 @@ export default class Records {
     msg += '\n\n**WANTED DEAD OR ALIVE**\n';
     msg += this.parseToInt(info.general['Bounties placed on you'])*4000;
     return msg;
+  }
+
+  /**
+   * Get the criminal record of a player
+   * @param nameOrStats The name of player, or his stats
+   */
+  public async garageRecord(nameOrStats: string | Stats): Promise<Vehicle[]> {
+    const info = typeof nameOrStats === 'string' ? await this.client.players.byName(nameOrStats).then(p => p.fetchStats()) : nameOrStats;
+    return info.garage;
   }
 
   /**

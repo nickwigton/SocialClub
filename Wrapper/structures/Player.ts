@@ -36,7 +36,7 @@ export default class Player extends BasePlayer {
     return this;
   }
 
-  get primaryCrew(): Crew {
+  getPrimaryCrew(): Crew {
     return this.crews.get(this.primaryCrewID);
   }
 

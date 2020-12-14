@@ -11,8 +11,8 @@ import { JobsSearch as Job } from '../Server/Endpoints/Jobs';
  */
 export default class Client extends EventEmitter {
   public records: Records = new Records(this);
-  public players = new MainPlayerStore(this, 30);
-  public crews = new MainCrewStore(this, 10);
+  public players = new MainPlayerStore(this, 0);
+  public crews = new MainCrewStore(this, 0);
   public api: Request;
   public me: MyPlayer;
 

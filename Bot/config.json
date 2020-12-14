@@ -1,0 +1,241 @@
+{
+  "BOT_TOKEN": "bot_token",
+  "SC_NICKNAME": "nickname",
+  "debug": true,
+  "COMMANDS": [
+    {
+      "name": "commands",
+      "syntax": ".commands",
+      "description": "Returns a list of all possible commands",
+      "allowedRoles": [
+        "admin",
+        "moderator",
+        "screen",
+        "everyone"
+      ]
+    },
+    {
+      "name": "crew",
+      "syntax": ".crew <sc_username>",
+      "description": "Look up a user's Crew information",
+      "allowedRoles": [
+        "everyone"
+      ]
+    },
+    {
+      "name": "crime",
+      "syntax": ".crime <sc_username>",
+      "description": "Look up a user's Crime information",
+      "allowedRoles": [
+        "everyone"
+      ]
+    },
+    {
+      "name": "modder",
+      "syntax": ".modder <sc_username>",
+      "description": "Look up a user's likelihood of being a Modder",
+      "allowedRoles": [
+        "admin",
+        "everyone"
+      ]
+    },
+    {
+      "name": "rid",
+      "syntax": ".rid <sc_username>",
+      "description": "Look up a user's Rockstar ID",
+      "allowedRoles": [
+        "modder",
+        "admin",
+        "moderator",
+        "screen",
+        "support"
+      ]
+    },
+    {
+      "name": "sc",
+      "syntax": ".sc <rockstar_id>",
+      "description": "Look up a user's Social Club Name by their Rockstar ID (Requires their wall to be public)",
+      "allowedRoles": [
+        "modder",
+        "admin",
+        "moderator",
+        "screen"
+      ]
+    },
+    {
+      "name": "garage",
+      "syntax": ".garage <sc_username>",
+      "description": "Looks up the vehicles in the player's currently active Garage",
+      "allowedRoles": [
+        "everyone"
+      ]
+    },
+    {
+      "name": "finances",
+      "syntax": ".finances <sc_username>",
+      "description": "Look up a user's Finance information",
+      "allowedRoles": [
+        "modder",
+        "admin",
+        "moderator",
+        "screen",
+        "support"
+      ]
+    },
+    {
+      "name": "rename",
+      "syntax": ".rename <discord_user_tag> <new_nickname>",
+      "description": "Changes a tagged user's server nickname",
+      "allowedRoles": [
+        "admin",
+        "moderator",
+        "screen"
+      ]
+    },
+    {
+      "name": "verify",
+      "syntax": ".verify <discord_user_tag>",
+      "description": "Verifies a user, adding them to the GTA V role",
+      "allowedRoles": [
+        "admin",
+        "moderator",
+        "screen"
+      ]
+    },
+    {
+      "name": "botmessage",
+      "syntax": ".botmessage <channel_name> <message>",
+      "description": "Sends a message to a channel as A1MGBot",
+      "allowedRoles": [
+        "admin",
+        "moderator"
+      ]
+    },
+    {
+      "name": "allow",
+      "syntax": ".allow <command> <role>",
+      "description": "Adds a role as having access to a command",
+      "allowedRoles": [
+        "admin",
+        "moderator",
+        "screen"
+      ]
+    },
+    {
+      "name": "deny",
+      "syntax": ".deny <command> <role>",
+      "description": "Removes a role as having access to a command",
+      "allowedRoles": [
+        "admin",
+        "moderator",
+        "screen"
+      ]
+    },
+    {
+      "name": "report",
+      "syntax": ".report <sc_username> <reason>",
+      "description": "Reports a person to be added to the blacklist",
+      "allowedRoles": [
+        "everyone"
+      ]
+    },
+    {
+      "name": "blacklist",
+      "syntax": ".blacklist <sc_username> <reason>",
+      "description": "Blacklists a user and sends them to the #blacklist channel",
+      "allowedRoles": [
+        "admin",
+        "moderator",
+        "screen",
+        "blacklistmoderator"
+      ]
+    },
+    {
+      "name": "unblacklist",
+      "syntax": ".unblacklist <sc_username>",
+      "description": "Removes a user from the A1MG blacklist",
+      "allowedRoles": [
+        "admin",
+        "moderator",
+        "screen",
+        "blacklistmoderator"
+      ]
+    },
+    {
+      "name": "check",
+      "syntax": ".check <sc_username>",
+      "description": "Checks to see if a user is on the A1MG blacklist",
+      "allowedRoles": [
+        "everyone"
+      ]
+    },
+    {
+      "name": "blistluna",
+      "syntax": ".blistluna",
+      "description": "Downloads the current A1MG Blacklist in Luna's blacklist format",
+      "allowedRoles": [
+        "moderator",
+        "admin",
+        "luna"
+      ]
+    },
+    {
+      "name": "blistpara",
+      "syntax": ".blistpara",
+      "description": "Downloads the current A1MG Blacklist in Paragon's blacklist format",
+      "allowedRoles": [
+        "everyone"
+      ]
+    },
+    {
+      "name": "blistimp",
+      "syntax": ".blistimp",
+      "description": "Downloads the current A1MG Blacklist in Impulse's blacklist format",
+      "allowedRoles": [
+        "everyone"
+      ]
+    },
+    {
+      "name": "blistcherax",
+      "syntax": ".blistcherax",
+      "description": "Downloads the current A1MG Blacklist in Cherax's blacklist format",
+      "allowedRoles": [
+        "everyone"
+      ]
+    },
+    {
+      "name": "suggest",
+      "syntax": ".suggest <suggestion>",
+      "description": "Submits a suggestion for the channel",
+      "allowedRoles": [
+        "everyone"
+      ]
+    }
+  ],
+  "NSFW_COMMANDS": [
+    {
+      "name": "boobs",
+      "syntax": ".boobs",
+      "description": "Returns a random image of boobs",
+      "allowedRoles": [
+        "everyone"
+      ]
+    },
+    {
+      "name": "ass",
+      "syntax": ".ass",
+      "description": "Returns a random image of an ass",
+      "allowedRoles": [
+        "everyone"
+      ]
+    },
+    {
+      "name": "rule34",
+      "syntax": ".rule34",
+      "description": "Returns a random image from rule34",
+      "allowedRoles": [
+        "everyone"
+      ]
+    }
+  ]
+}

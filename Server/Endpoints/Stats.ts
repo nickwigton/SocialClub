@@ -1,3 +1,4 @@
+import { Vehicle } from "../../Wrapper/structures/Vehicle";
 import { Routes, GET, int } from "../Decorators";
 
 @Routes('players')
@@ -56,7 +57,8 @@ export interface StatsFetch {
   combat: CombatStats,
   weapons: WeaponStats,
   skills: SkillStats,
-  extra: ExtraStats
+  extra: ExtraStats,
+  garage: Vehicle[]
 }
 
 export interface CareerStats {

@@ -43,6 +43,19 @@ export default class Players {
   }
 
   /**
+   * Alternative find user by ID
+   * @param id Rockstar ID to look up
+   */
+  @GET('findById/:id')
+  findById(id: number) {
+    return this.req(`https://scapi.rockstargames.com/feed/member?rockstarId=${id}&offset=1&limit=10000000&title=&platform=&group=all`, {
+        format: (data: any) => {
+            return data.activities.filter((a: any) => a.type == 'account_registered')[0].actor;
+        }
+    })
+  }
+
+  /**
    * Fetch the stats of a given player
    * @param id ID of the player
    */

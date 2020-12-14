@@ -2,6 +2,7 @@ import { StatsFetch as Stats } from '../../../Server/Endpoints/Stats';
 import Client from '../../Client';
 import Feed from '../Feed';
 import RawCrew from '../Crew';
+import { Vehicle } from '../Vehicle';
 
 /**
  * Base Player class, should NOT be initiated
@@ -99,6 +100,13 @@ export default class BasePlayer {
    */
   public criminalRecord(): Promise<string> {
     return this.client.records.criminalRecord(this.name);
+  }
+
+  /**
+   * Fetches the garage record
+   */
+  public garageRecord(): Promise<Vehicle[]> {
+    return this.client.records.garageRecord(this.name);
   }
 }
 

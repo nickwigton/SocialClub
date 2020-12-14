@@ -1,0 +1,1288 @@
+{
+    "colors": [
+        {
+            "colorName": "Metallic Black",
+            "colorHex": "0d1116"
+        },
+        {
+            "colorName": "Metallic Graphite Black",
+            "colorHex": "1c1d21"
+        },
+        {
+            "colorName": "Metallic Black Steal",
+            "colorHex": "32383d"
+        },
+        {
+            "colorName": "Metallic Dark Silver",
+            "colorHex": "454b4f"
+        },
+        {
+            "colorName": "Metallic Silver",
+            "colorHex": "999da0"
+        },
+        {
+            "colorName": "Metallic Blue Silver",
+            "colorHex": "c2c4c6"
+        },
+        {
+            "colorName": "Metallic Steel Gray",
+            "colorHex": "979a97"
+        },
+        {
+            "colorName": "Metallic Shadow Silver",
+            "colorHex": "637380"
+        },
+        {
+            "colorName": "Metallic Stone Silver",
+            "colorHex": "63625c"
+        },
+        {
+            "colorName": "Metallic Midnight Silver",
+            "colorHex": "3c3f47"
+        },
+        {
+            "colorName": "Metallic Gun Metal",
+            "colorHex": "444e54"
+        },
+        {
+            "colorName": "Metallic Anthracite Grey",
+            "colorHex": "1d2129"
+        },
+        {
+            "colorName": "Matte Black",
+            "colorHex": "13181f"
+        },
+        {
+            "colorName": "Matte Gray",
+            "colorHex": "26282a"
+        },
+        {
+            "colorName": "Matte Light Grey",
+            "colorHex": "515554"
+        },
+        {
+            "colorName": "Util Black",
+            "colorHex": "151921"
+        },
+        {
+            "colorName": "Util Black Poly",
+            "colorHex": "1e2429"
+        },
+        {
+            "colorName": "Util Dark silver",
+            "colorHex": "333a3c"
+        },
+        {
+            "colorName": "Util Silver",
+            "colorHex": "8c9095"
+        },
+        {
+            "colorName": "Util Gun Metal",
+            "colorHex": "39434d"
+        },
+        {
+            "colorName": "Util Shadow Silver",
+            "colorHex": "506272"
+        },
+        {
+            "colorName": "Worn Black",
+            "colorHex": "1e232f"
+        },
+        {
+            "colorName": "Worn Graphite",
+            "colorHex": "363a3f"
+        },
+        {
+            "colorName": "Worn Silver Grey",
+            "colorHex": "a0a199"
+        },
+        {
+            "colorName": "Worn Silver",
+            "colorHex": "d3d3d3"
+        },
+        {
+            "colorName": "Worn Blue Silver",
+            "colorHex": "b7bfca"
+        },
+        {
+            "colorName": "Worn Shadow Silver",
+            "colorHex": "778794"
+        },
+        {
+            "colorName": "Metallic Red",
+            "colorHex": "c00e1a"
+        },
+        {
+            "colorName": "Metallic Torino Red",
+            "colorHex": "da1918"
+        },
+        {
+            "colorName": "Metallic Formula Red",
+            "colorHex": "b6111b"
+        },
+        {
+            "colorName": "Metallic Blaze Red",
+            "colorHex": "a51e23"
+        },
+        {
+            "colorName": "Metallic Graceful Red",
+            "colorHex": "7b1a22"
+        },
+        {
+            "colorName": "Metallic Garnet Red",
+            "colorHex": "8e1b1f"
+        },
+        {
+            "colorName": "Metallic Desert Red",
+            "colorHex": "6f1818"
+        },
+        {
+            "colorName": "Metallic Cabernet Red",
+            "colorHex": "49111d"
+        },
+        {
+            "colorName": "Metallic Candy Red",
+            "colorHex": "b60f25"
+        },
+        {
+            "colorName": "Metallic Sunrise Orange",
+            "colorHex": "d44a17"
+        },
+        {
+            "colorName": "Metallic Classic Gold",
+            "colorHex": "c2944f"
+        },
+        {
+            "colorName": "Metallic Orange",
+            "colorHex": "f78616"
+        },
+        {
+            "colorName": "Matte Red",
+            "colorHex": "cf1f21"
+        },
+        {
+            "colorName": "Matte Dark Red",
+            "colorHex": "732021"
+        },
+        {
+            "colorName": "Matte Orange",
+            "colorHex": "f27d20"
+        },
+        {
+            "colorName": "Matte Yellow",
+            "colorHex": "ffc91f"
+        },
+        {
+            "colorName": "Util Red",
+            "colorHex": "9c1016"
+        },
+        {
+            "colorName": "Util Bright Red",
+            "colorHex": "de0f18"
+        },
+        {
+            "colorName": "Util Garnet Red",
+            "colorHex": "8f1e17"
+        },
+        {
+            "colorName": "Worn Red",
+            "colorHex": "a94744"
+        },
+        {
+            "colorName": "Worn Golden Red",
+            "colorHex": "b16c51"
+        },
+        {
+            "colorName": "Worn Dark Red",
+            "colorHex": "371c25"
+        },
+        {
+            "colorName": "Metallic Dark Green",
+            "colorHex": "132428"
+        },
+        {
+            "colorName": "Metallic Racing Green",
+            "colorHex": "122e2b"
+        },
+        {
+            "colorName": "Metallic Sea Green",
+            "colorHex": "12383c"
+        },
+        {
+            "colorName": "Metallic Olive Green",
+            "colorHex": "31423f"
+        },
+        {
+            "colorName": "Metallic Green",
+            "colorHex": "155c2d"
+        },
+        {
+            "colorName": "Metallic Gasoline Blue Green",
+            "colorHex": "1b6770"
+        },
+        {
+            "colorName": "Matte Lime Green",
+            "colorHex": "66b81f"
+        },
+        {
+            "colorName": "Util Dark Green",
+            "colorHex": "22383e"
+        },
+        {
+            "colorName": "Util Green",
+            "colorHex": "1d5a3f"
+        },
+        {
+            "colorName": "Worn Dark Green",
+            "colorHex": "2d423f"
+        },
+        {
+            "colorName": "Worn Green",
+            "colorHex": "45594b"
+        },
+        {
+            "colorName": "Worn Sea Wash",
+            "colorHex": "65867f"
+        },
+        {
+            "colorName": "Metallic Midnight Blue",
+            "colorHex": "222e46"
+        },
+        {
+            "colorName": "Metallic Dark Blue",
+            "colorHex": "233155"
+        },
+        {
+            "colorName": "Metallic Saxony Blue",
+            "colorHex": "304c7e"
+        },
+        {
+            "colorName": "Metallic Blue",
+            "colorHex": "47578f"
+        },
+        {
+            "colorName": "Metallic Mariner Blue",
+            "colorHex": "637ba7"
+        },
+        {
+            "colorName": "Metallic Harbor Blue",
+            "colorHex": "394762"
+        },
+        {
+            "colorName": "Metallic Diamond Blue",
+            "colorHex": "d6e7f1"
+        },
+        {
+            "colorName": "Metallic Surf Blue",
+            "colorHex": "76afbe"
+        },
+        {
+            "colorName": "Metallic Nautical Blue",
+            "colorHex": "345e72"
+        },
+        {
+            "colorName": "Metallic Bright Blue",
+            "colorHex": "0b9cf1"
+        },
+        {
+            "colorName": "Metallic Purple Blue",
+            "colorHex": "2f2d52"
+        },
+        {
+            "colorName": "Metallic Spinnaker Blue",
+            "colorHex": "282c4d"
+        },
+        {
+            "colorName": "Metallic Ultra Blue",
+            "colorHex": "2354a1"
+        },
+        {
+            "colorName": "Metallic Bright Blue",
+            "colorHex": "6ea3c6"
+        },
+        {
+            "colorName": "Util Dark Blue",
+            "colorHex": "112552"
+        },
+        {
+            "colorName": "Util Midnight Blue",
+            "colorHex": "1b203e"
+        },
+        {
+            "colorName": "Util Blue",
+            "colorHex": "275190"
+        },
+        {
+            "colorName": "Util Sea Foam Blue",
+            "colorHex": "608592"
+        },
+        {
+            "colorName": "Util Lightning blue",
+            "colorHex": "2446a8"
+        },
+        {
+            "colorName": "Util Maui Blue Poly",
+            "colorHex": "4271e1"
+        },
+        {
+            "colorName": "Util Bright Blue",
+            "colorHex": "3b39e0"
+        },
+        {
+            "colorName": "Matte Dark Blue",
+            "colorHex": "1f2852"
+        },
+        {
+            "colorName": "Matte Blue",
+            "colorHex": "253aa7"
+        },
+        {
+            "colorName": "Matte Midnight Blue",
+            "colorHex": "1c3551"
+        },
+        {
+            "colorName": "Worn Dark blue",
+            "colorHex": "4c5f81"
+        },
+        {
+            "colorName": "Worn Blue",
+            "colorHex": "58688e"
+        },
+        {
+            "colorName": "Worn Light blue",
+            "colorHex": "74b5d8"
+        },
+        {
+            "colorName": "Metallic Taxi Yellow",
+            "colorHex": "ffcf20"
+        },
+        {
+            "colorName": "Metallic Race Yellow",
+            "colorHex": "fbe212"
+        },
+        {
+            "colorName": "Metallic Bronze",
+            "colorHex": "916532"
+        },
+        {
+            "colorName": "Metallic Yellow Bird",
+            "colorHex": "e0e13d"
+        },
+        {
+            "colorName": "Metallic Lime",
+            "colorHex": "98d223"
+        },
+        {
+            "colorName": "Metallic Champagne",
+            "colorHex": "9b8c78"
+        },
+        {
+            "colorName": "Metallic Pueblo Beige",
+            "colorHex": "503218"
+        },
+        {
+            "colorName": "Metallic Dark Ivory",
+            "colorHex": "473f2b"
+        },
+        {
+            "colorName": "Metallic Choco Brown",
+            "colorHex": "221b19"
+        },
+        {
+            "colorName": "Metallic Golden Brown",
+            "colorHex": "653f23"
+        },
+        {
+            "colorName": "Metallic Light Brown",
+            "colorHex": "775c3e"
+        },
+        {
+            "colorName": "Metallic Straw Beige",
+            "colorHex": "ac9975"
+        },
+        {
+            "colorName": "Metallic Moss Brown",
+            "colorHex": "6c6b4b"
+        },
+        {
+            "colorName": "Metallic Biston Brown",
+            "colorHex": "402e2b"
+        },
+        {
+            "colorName": "Metallic Beechwood",
+            "colorHex": "a4965f"
+        },
+        {
+            "colorName": "Metallic Dark Beechwood",
+            "colorHex": "46231a"
+        },
+        {
+            "colorName": "Metallic Choco Orange",
+            "colorHex": "752b19"
+        },
+        {
+            "colorName": "Metallic Beach Sand",
+            "colorHex": "bfae7b"
+        },
+        {
+            "colorName": "Metallic Sun Bleeched Sand",
+            "colorHex": "dfd5b2"
+        },
+        {
+            "colorName": "Metallic Cream",
+            "colorHex": "f7edd5"
+        },
+        {
+            "colorName": "Util Brown",
+            "colorHex": "3a2a1b"
+        },
+        {
+            "colorName": "Util Medium Brown",
+            "colorHex": "785f33"
+        },
+        {
+            "colorName": "Util Light Brown",
+            "colorHex": "b5a079"
+        },
+        {
+            "colorName": "Metallic White",
+            "colorHex": "fffff6"
+        },
+        {
+            "colorName": "Metallic Frost White",
+            "colorHex": "eaeaea"
+        },
+        {
+            "colorName": "Worn Honey Beige",
+            "colorHex": "b0ab94"
+        },
+        {
+            "colorName": "Worn Brown",
+            "colorHex": "453831"
+        },
+        {
+            "colorName": "Worn Dark Brown",
+            "colorHex": "2a282b"
+        },
+        {
+            "colorName": "Worn straw beige",
+            "colorHex": "726c57"
+        },
+        {
+            "colorName": "Brushed Steel",
+            "colorHex": "6a747c"
+        },
+        {
+            "colorName": "Brushed Black steel",
+            "colorHex": "354158"
+        },
+        {
+            "colorName": "Brushed Aluminium",
+            "colorHex": "9ba0a8"
+        },
+        {
+            "colorName": "Chrome",
+            "colorHex": "5870a1"
+        },
+        {
+            "colorName": "Worn Off White",
+            "colorHex": "eae6de"
+        },
+        {
+            "colorName": "Util Off White",
+            "colorHex": "dfddd0"
+        },
+        {
+            "colorName": "Worn Orange",
+            "colorHex": "f2ad2e"
+        },
+        {
+            "colorName": "Worn Light Orange",
+            "colorHex": "f9a458"
+        },
+        {
+            "colorName": "Metallic Securicor Green",
+            "colorHex": "83c566"
+        },
+        {
+            "colorName": "Worn Taxi Yellow",
+            "colorHex": "f1cc40"
+        },
+        {
+            "colorName": "police car blue",
+            "colorHex": "4cc3da"
+        },
+        {
+            "colorName": "Matte Green",
+            "colorHex": "4e6443"
+        },
+        {
+            "colorName": "Matte Brown",
+            "colorHex": "bcac8f"
+        },
+        {
+            "colorName": "Worn Orange",
+            "colorHex": "f8b658"
+        },
+        {
+            "colorName": "Matte White",
+            "colorHex": "fcf9f1"
+        },
+        {
+            "colorName": "Worn White",
+            "colorHex": "fffffb"
+        },
+        {
+            "colorName": "Worn Olive Army Green",
+            "colorHex": "81844c"
+        },
+        {
+            "colorName": "Pure White",
+            "colorHex": "ffffff"
+        },
+        {
+            "colorName": "Hot Pink",
+            "colorHex": "f21f99"
+        },
+        {
+            "colorName": "Salmon pink",
+            "colorHex": "fdd6cd"
+        },
+        {
+            "colorName": "Metallic Vermillion Pink",
+            "colorHex": "df5891"
+        },
+        {
+            "colorName": "Orange",
+            "colorHex": "f6ae20"
+        },
+        {
+            "colorName": "Green",
+            "colorHex": "b0ee6e"
+        },
+        {
+            "colorName": "Blue",
+            "colorHex": "08e9fa"
+        },
+        {
+            "colorName": "Mettalic Black Blue",
+            "colorHex": "0a0c17"
+        },
+        {
+            "colorName": "Metallic Black Purple",
+            "colorHex": "0c0d18"
+        },
+        {
+            "colorName": "Metallic Black Red",
+            "colorHex": "0e0d14"
+        },
+        {
+            "colorName": "hunter green",
+            "colorHex": "9f9e8a"
+        },
+        {
+            "colorName": "Metallic Purple",
+            "colorHex": "621276"
+        },
+        {
+            "colorName": "Metaillic V Dark Blue",
+            "colorHex": "0b1421"
+        },
+        {
+            "colorName": "MODSHOP BLACK1",
+            "colorHex": "11141a"
+        },
+        {
+            "colorName": "Matte Purple",
+            "colorHex": "6b1f7b"
+        },
+        {
+            "colorName": "Matte Dark Purple",
+            "colorHex": "1e1d22"
+        },
+        {
+            "colorName": "Metallic Lava Red",
+            "colorHex": "bc1917"
+        },
+        {
+            "colorName": "Matte Forest Green",
+            "colorHex": "2d362a"
+        },
+        {
+            "colorName": "Matte Olive Drab",
+            "colorHex": "696748"
+        },
+        {
+            "colorName": "Matte Desert Brown",
+            "colorHex": "7a6c55"
+        },
+        {
+            "colorName": "Matte Desert Tan",
+            "colorHex": "c3b492"
+        },
+        {
+            "colorName": "Matte Foilage Green",
+            "colorHex": "5a6352"
+        },
+        {
+            "colorName": "DEFAULT ALLOY COLOR",
+            "colorHex": "81827f"
+        },
+        {
+            "colorName": "Epsilon Blue",
+            "colorHex": "afd6e4"
+        },
+        {
+            "colorName": "Pure Gold",
+            "colorHex": "7a6440"
+        },
+        {
+            "colorName": "Brushed Gold",
+            "colorHex": "7f6a48"
+        },
+        {
+            "colorName": "Black ",
+            "colorHex": "080808"
+        },
+        {
+            "colorName": "Graphite ",
+            "colorHex": "0f0f0f"
+        },
+        {
+            "colorName": "Black Steel",
+            "colorHex": "1c1e21"
+        },
+        {
+            "colorName": "Dark Steel",
+            "colorHex": "292c2e"
+        },
+        {
+            "colorName": "Silver ",
+            "colorHex": "5a5e66"
+        },
+        {
+            "colorName": "Bluish Silver",
+            "colorHex": "777c87"
+        },
+        {
+            "colorName": "Rolled Steel",
+            "colorHex": "515459"
+        },
+        {
+            "colorName": "Shadow Silver",
+            "colorHex": "323b47"
+        },
+        {
+            "colorName": "Stone Silver",
+            "colorHex": "333333"
+        },
+        {
+            "colorName": "Midnight Silver",
+            "colorHex": "1f2226"
+        },
+        {
+            "colorName": "Cast Iron Silver",
+            "colorHex": "23292e"
+        },
+        {
+            "colorName": "Anthracite Black",
+            "colorHex": "121110"
+        },
+        {
+            "colorName": "Matte Black",
+            "colorHex": "050505"
+        },
+        {
+            "colorName": "Matte Gray",
+            "colorHex": "121212"
+        },
+        {
+            "colorName": "Matte Light Gray",
+            "colorHex": "2f3233"
+        },
+        {
+            "colorName": "Util Black",
+            "colorHex": "080808"
+        },
+        {
+            "colorName": "Util Black Poly",
+            "colorHex": "121212"
+        },
+        {
+            "colorName": "Util Dark silver",
+            "colorHex": "202224"
+        },
+        {
+            "colorName": "Util Silver",
+            "colorHex": "575961"
+        },
+        {
+            "colorName": "Util Gun Metal",
+            "colorHex": "23292e"
+        },
+        {
+            "colorName": "Util Shadow Silver",
+            "colorHex": "323b47"
+        },
+        {
+            "colorName": "Worn Black",
+            "colorHex": "0f1012"
+        },
+        {
+            "colorName": "Worn Graphite",
+            "colorHex": "212121"
+        },
+        {
+            "colorName": "Worn Silver Grey",
+            "colorHex": "5b5d5e"
+        },
+        {
+            "colorName": "Worn Silver",
+            "colorHex": "888a99"
+        },
+        {
+            "colorName": "Worn Blue Silver",
+            "colorHex": "697187"
+        },
+        {
+            "colorName": "Worn Shadow Silver",
+            "colorHex": "3b4654"
+        },
+        {
+            "colorName": "Red ",
+            "colorHex": "690000"
+        },
+        {
+            "colorName": "Torino Red",
+            "colorHex": "8a0b00"
+        },
+        {
+            "colorName": "Formula Red",
+            "colorHex": "6b0000"
+        },
+        {
+            "colorName": "Blaze Red",
+            "colorHex": "611009"
+        },
+        {
+            "colorName": "Grace Red",
+            "colorHex": "4a0a0a"
+        },
+        {
+            "colorName": "Garnet Red",
+            "colorHex": "470e0e"
+        },
+        {
+            "colorName": "Sunset Red",
+            "colorHex": "380c00"
+        },
+        {
+            "colorName": "Cabernet Red",
+            "colorHex": "26030b"
+        },
+        {
+            "colorName": "Candy Red",
+            "colorHex": "630012"
+        },
+        {
+            "colorName": "Sunrise Orange",
+            "colorHex": "802800"
+        },
+        {
+            "colorName": "Gold ",
+            "colorHex": "6e4f2d"
+        },
+        {
+            "colorName": "Orange ",
+            "colorHex": "bd4800"
+        },
+        {
+            "colorName": "Matte Red",
+            "colorHex": "780000"
+        },
+        {
+            "colorName": "Matte Dark Red",
+            "colorHex": "360000"
+        },
+        {
+            "colorName": "Matte Orange",
+            "colorHex": "ab3f00"
+        },
+        {
+            "colorName": "Matte Yellow",
+            "colorHex": "de7e00"
+        },
+        {
+            "colorName": "Util Red",
+            "colorHex": "520000"
+        },
+        {
+            "colorName": "Util Bright Red",
+            "colorHex": "8c0404"
+        },
+        {
+            "colorName": "Util Garnet Red",
+            "colorHex": "4a1000"
+        },
+        {
+            "colorName": "Worn Red",
+            "colorHex": "592525"
+        },
+        {
+            "colorName": "Worn Golden Red",
+            "colorHex": "754231"
+        },
+        {
+            "colorName": "Worn Dark Red",
+            "colorHex": "210804"
+        },
+        {
+            "colorName": "Dark Green",
+            "colorHex": "001207"
+        },
+        {
+            "colorName": "Racing Green",
+            "colorHex": "001a0b"
+        },
+        {
+            "colorName": "Sea Green",
+            "colorHex": "00211e"
+        },
+        {
+            "colorName": "Olive Green",
+            "colorHex": "1f261e"
+        },
+        {
+            "colorName": "Bright Green",
+            "colorHex": "003805"
+        },
+        {
+            "colorName": "Gasoline Green",
+            "colorHex": "0b4145"
+        },
+        {
+            "colorName": "Matte Lime Green",
+            "colorHex": "418503"
+        },
+        {
+            "colorName": "Util Dark Green",
+            "colorHex": "0f1f15"
+        },
+        {
+            "colorName": "Util Green",
+            "colorHex": "023613"
+        },
+        {
+            "colorName": "Worn Dark Green",
+            "colorHex": "162419"
+        },
+        {
+            "colorName": "Worn Green",
+            "colorHex": "2a3625"
+        },
+        {
+            "colorName": "Worn Sea Wash",
+            "colorHex": "455c56"
+        },
+        {
+            "colorName": "Galaxy Blue",
+            "colorHex": "000d14"
+        },
+        {
+            "colorName": "Dark Blue",
+            "colorHex": "001029"
+        },
+        {
+            "colorName": "Saxon Blue",
+            "colorHex": "1c2f4f"
+        },
+        {
+            "colorName": "Blue ",
+            "colorHex": "001b57"
+        },
+        {
+            "colorName": "Mariner Blue",
+            "colorHex": "3b4e78"
+        },
+        {
+            "colorName": "Harbor Blue",
+            "colorHex": "272d3b"
+        },
+        {
+            "colorName": "Diamond Blue",
+            "colorHex": "95b2db"
+        },
+        {
+            "colorName": "Surf Blue",
+            "colorHex": "3e627a"
+        },
+        {
+            "colorName": "Nautical Blue",
+            "colorHex": "1c3140"
+        },
+        {
+            "colorName": "Ultra Blue",
+            "colorHex": "0055c4"
+        },
+        {
+            "colorName": "Schafter Purple",
+            "colorHex": "1a182e"
+        },
+        {
+            "colorName": "Spinnaker Purple",
+            "colorHex": "161629"
+        },
+        {
+            "colorName": "Racing Blue",
+            "colorHex": "0e316d"
+        },
+        {
+            "colorName": "Light Blue",
+            "colorHex": "395a83"
+        },
+        {
+            "colorName": "Util Dark Blue",
+            "colorHex": "09142e"
+        },
+        {
+            "colorName": "Util Midnight Blue",
+            "colorHex": "0f1021"
+        },
+        {
+            "colorName": "Util Blue",
+            "colorHex": "152a52"
+        },
+        {
+            "colorName": "Util Sea Foam Blue",
+            "colorHex": "324654"
+        },
+        {
+            "colorName": "Util Lightning Blue",
+            "colorHex": "152563"
+        },
+        {
+            "colorName": "Util Maui Blue Poly",
+            "colorHex": "223ba1"
+        },
+        {
+            "colorName": "Util Bright Blue/Slate Blue",
+            "colorHex": "1f1fa1"
+        },
+        {
+            "colorName": "Matte Dark Blue",
+            "colorHex": "030e2e"
+        },
+        {
+            "colorName": "Matte Blue",
+            "colorHex": "0f1e73"
+        },
+        {
+            "colorName": "Matte Midnight Blue",
+            "colorHex": "001c32"
+        },
+        {
+            "colorName": "Worn Dark Blue",
+            "colorHex": "2a3754"
+        },
+        {
+            "colorName": "Worn Blue",
+            "colorHex": "303c5e"
+        },
+        {
+            "colorName": "Worn Baby Blue",
+            "colorHex": "3b6796"
+        },
+        {
+            "colorName": "Yellow ",
+            "colorHex": "f5890f"
+        },
+        {
+            "colorName": "Race Yellow",
+            "colorHex": "d9a600"
+        },
+        {
+            "colorName": "Bronze ",
+            "colorHex": "4a341b"
+        },
+        {
+            "colorName": "Dew Yellow/Yellow Bird",
+            "colorHex": "a2a827"
+        },
+        {
+            "colorName": "Lime Green",
+            "colorHex": "568f00"
+        },
+        {
+            "colorName": "Champagne ",
+            "colorHex": "57514b"
+        },
+        {
+            "colorName": "Feltzer Brown",
+            "colorHex": "291b06"
+        },
+        {
+            "colorName": "Creek Brown",
+            "colorHex": "262117"
+        },
+        {
+            "colorName": "Chocolate Brown",
+            "colorHex": "120d07"
+        },
+        {
+            "colorName": "Maple Brown",
+            "colorHex": "332111"
+        },
+        {
+            "colorName": "Saddle Brown",
+            "colorHex": "3d3023"
+        },
+        {
+            "colorName": "Straw Brown",
+            "colorHex": "5e5343"
+        },
+        {
+            "colorName": "Moss Brown",
+            "colorHex": "37382b"
+        },
+        {
+            "colorName": "Bison Brown",
+            "colorHex": "221918"
+        },
+        {
+            "colorName": "WoodBeech Brown",
+            "colorHex": "575036"
+        },
+        {
+            "colorName": "BeechWood Brown",
+            "colorHex": "241309"
+        },
+        {
+            "colorName": "Sienna Brown",
+            "colorHex": "3b1700"
+        },
+        {
+            "colorName": "Sandy Brown",
+            "colorHex": "6e6246"
+        },
+        {
+            "colorName": "Bleached Brown",
+            "colorHex": "998d73"
+        },
+        {
+            "colorName": "Cream ",
+            "colorHex": "cfc0a5"
+        },
+        {
+            "colorName": "Util Brown",
+            "colorHex": "1f1709"
+        },
+        {
+            "colorName": "Util Medium Brown",
+            "colorHex": "3d311d"
+        },
+        {
+            "colorName": "Util Light Brown",
+            "colorHex": "665847"
+        },
+        {
+            "colorName": "Ice White",
+            "colorHex": "f0f0f0"
+        },
+        {
+            "colorName": "Frost White",
+            "colorHex": "b3b9c9"
+        },
+        {
+            "colorName": "Worn Honey Beige",
+            "colorHex": "615f55"
+        },
+        {
+            "colorName": "Worn Brown",
+            "colorHex": "241e1a"
+        },
+        {
+            "colorName": "Worn Dark Brown",
+            "colorHex": "171413"
+        },
+        {
+            "colorName": "Worn Straw Beige",
+            "colorHex": "3b372f"
+        },
+        {
+            "colorName": "Brushed Steel",
+            "colorHex": "3b4045"
+        },
+        {
+            "colorName": "Brushed Black Steel",
+            "colorHex": "1a1e21"
+        },
+        {
+            "colorName": "Brushed Aluminium",
+            "colorHex": "5e646b"
+        },
+        {
+            "colorName": "Chrome ",
+            "colorHex": "000000"
+        },
+        {
+            "colorName": "Worn Off White",
+            "colorHex": "b0b0b0"
+        },
+        {
+            "colorName": "Util Off White",
+            "colorHex": "999999"
+        },
+        {
+            "colorName": "Worn Orange",
+            "colorHex": "b56519"
+        },
+        {
+            "colorName": "Worn Light Orange",
+            "colorHex": "c45c33"
+        },
+        {
+            "colorName": "Pea Green/Securicor Green",
+            "colorHex": "47783c"
+        },
+        {
+            "colorName": "Worn Taxi Yellow",
+            "colorHex": "ba8425"
+        },
+        {
+            "colorName": "Police Blue",
+            "colorHex": "2a77a1"
+        },
+        {
+            "colorName": "Matte Green",
+            "colorHex": "243022"
+        },
+        {
+            "colorName": "Matte Brown",
+            "colorHex": "6b5f54"
+        },
+        {
+            "colorName": "Worn Orange 2",
+            "colorHex": "c96e34"
+        },
+        {
+            "colorName": "Ice White Matte",
+            "colorHex": "d9d9d9"
+        },
+        {
+            "colorName": "Worn White",
+            "colorHex": "f0f0f0"
+        },
+        {
+            "colorName": "Worn Olive Army Green",
+            "colorHex": "3f4228"
+        },
+        {
+            "colorName": "Pure White",
+            "colorHex": "ffffff"
+        },
+        {
+            "colorName": "Hot Pink",
+            "colorHex": "b01259"
+        },
+        {
+            "colorName": "Salmon Pink",
+            "colorHex": "f69799"
+        },
+        {
+            "colorName": "Pfister Pink",
+            "colorHex": "8f2f55"
+        },
+        {
+            "colorName": "Bright Orange",
+            "colorHex": "c26610"
+        },
+        {
+            "colorName": "Green Bright",
+            "colorHex": "69bd45"
+        },
+        {
+            "colorName": "Fluorescent Blue",
+            "colorHex": "00aeef"
+        },
+        {
+            "colorName": "Midnight Blue",
+            "colorHex": "000108"
+        },
+        {
+            "colorName": "Midnight Purple",
+            "colorHex": "050008"
+        },
+        {
+            "colorName": "Wine Red",
+            "colorHex": "080000"
+        },
+        {
+            "colorName": "Hunter Green",
+            "colorHex": "565751"
+        },
+        {
+            "colorName": "Bright Purple",
+            "colorHex": "320642"
+        },
+        {
+            "colorName": "Midnight Purple",
+            "colorHex": "050008"
+        },
+        {
+            "colorName": "Carbon Black",
+            "colorHex": "080808"
+        },
+        {
+            "colorName": "Matte Schafter Purple",
+            "colorHex": "320642"
+        },
+        {
+            "colorName": "Matte Midnight Purple",
+            "colorHex": "050008"
+        },
+        {
+            "colorName": "Lava Red",
+            "colorHex": "6b0b00"
+        },
+        {
+            "colorName": "Matte Forest Green",
+            "colorHex": "121710"
+        },
+        {
+            "colorName": "Matte Olive Drab",
+            "colorHex": "323325"
+        },
+        {
+            "colorName": "Matte Dark Earth",
+            "colorHex": "3b352d"
+        },
+        {
+            "colorName": "Matte Desert Tan",
+            "colorHex": "706656"
+        },
+        {
+            "colorName": "Matte Foliage Green",
+            "colorHex": "2b302b"
+        },
+        {
+            "colorName": "DefaultAlloyColor ",
+            "colorHex": "414347"
+        },
+        {
+            "colorName": "Epsilon Blue",
+            "colorHex": "6690b5"
+        },
+        {
+            "colorName": "Pure Gold",
+            "colorHex": "47391b"
+        },
+        {
+            "colorName": "Brushed Gold",
+            "colorHex": "47391b"
+        },
+        {
+            "colorName": "MP100 ",
+            "colorHex": "ffd859"
+        }
+    ]
+}

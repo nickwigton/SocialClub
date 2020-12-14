@@ -13,12 +13,11 @@
   "include": [
     "./Server/**/*.ts",
     "./Wrapper/**/*.ts",
-    "./Example/**/*.ts"
+    "./Bot/**/*.ts"
   ],
   "exclude": [
     "node_modules",
     "dist",
-    "Docs",
-    "Bot"
+    "Docs"
   ]
 }

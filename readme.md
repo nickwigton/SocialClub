@@ -4,9 +4,11 @@ WARNING: This is a work in progress
 
 #Installation
 Clone this repository and run `tsc` to compile (you need TypeScript installed, `npm i -g typescript`).
+Prior to running the application, make sure you configure any config files to your bot token/SC logins.
+Once you have compiled it, you can run `npm run bot` to automatically launch the server, log in, and start your bot.
 
 #Server
-The GTA V SocialClub server has a terriblem, undocumented API. The `Server` in this repository has very clean endpoints, and will be documented when I have the time. The server is basicly node between you and the SocialClub server.
+The GTA V SocialClub server has a terrible, undocumented API. The `Server` in this repository has very clean endpoints, and will be documented when I have the time. The server is basicly node between you and the SocialClub server.
 You can start the server with `npm run server`. You will see a chromium browser popup with the login page of SocialClub. After manually logging in, a new tab will open automaticly. Please do not touch this browser instance anymore.
 From now on, you are ready to go! Endpoints can not be access via `http://localhost:3000/{endpoint}` (no `https` support yet).
 

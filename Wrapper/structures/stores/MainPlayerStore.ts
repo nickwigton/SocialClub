@@ -46,4 +46,30 @@ export default class MainPlayerStore extends PlayerStore {
       return player;
     })
   }
+
+  /**
+     * Alternative fetch a Player by ID
+     * @param name ID of the Player
+     */
+    findById(id: number) {
+      return this.client.api.get(`players/findById/${id}`).then(p => {
+          return p;
+      });
+  }
+
+  /**
+   * Returns the players' mugshot
+   * @param id Rockstar ID of the Player
+   */
+  mugshot(id: number) {
+      // if (!forceFetch && this.has(id)) {
+      //     return Promise.resolve(this.get(id));
+      // }
+      return this.client.api.get(`players/${id}/mugshot`).then(p => {
+          return p;
+          // const player = new Player_1.default(this.client, p.name, p);
+          // this.set(player.id, player);
+          // return player;
+      });
+  }
 }

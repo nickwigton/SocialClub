@@ -29,8 +29,9 @@ export default class Request extends Browser {
     return Promise.all([
       this.req(`https://socialclub.rockstargames.com/games/gtav/StatsAjax?character=Freemode&category=Career&nickname=${name}&slot=Freemode`, { json: false, reqToken: true }),
       this.req(`https://socialclub.rockstargames.com/games/gtav/career/overviewAjax?character=Freemode&nickname=${name}&slot=Freemode`, { json: false, reqToken: true }),
+      this.req(`https://socialclub.rockstargames.com/gtav/GarageAjax?nickname=${name}&slot=Freemode`, { json: false, reqToken: true }),
     ]).then(res => {
-      const stats = parseStats(res[0], res[1]);
+      const stats = parseStats(res[0], res[1], res[2]);
       if(stats) stats.name = name;
       return stats;
     })

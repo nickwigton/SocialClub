@@ -1,4 +1,4 @@
-export default function (page: string, overviewPage: string) {
+export default function (page: string, overviewPage: string, garagePage: string) {
   try{
     if(page.includes("This member is not sharing game stats"))
       throw new Error('CLOSED_PROFILE');
@@ -6,7 +6,7 @@ export default function (page: string, overviewPage: string) {
       throw new Error('INVALID_PLAYER');
 
     const data: any = {};
-    for(const a of page.substr(page.indexOf('<div class="tab-content">')+8).split('<div id="'))
+    for(const a of page.substr(page.indexOf('<div class="tab-content">')+8).split('<div id="')) {
       if(a.substr(0,6) != 'skills'){
         const key = a.substr(0,20).split('"')[0];
         data[key] = {};
@@ -14,6 +14,7 @@ export default function (page: string, overviewPage: string) {
         for(let j = 1; j < b.length - 1; j += 2)
           data[key][b[j].split("<")[0]] = b[j+1].split("<")[0];
       }
+    }
 
     // Let's add the skills
     data.skills = {};
@@ -33,6 +34,11 @@ export default function (page: string, overviewPage: string) {
     const extra = parseSecondPage(overviewPage);
     if(!extra) throw 'PARSING_FAILED';
     data.extra = extra;
+
+    // Collect Garage information
+    const garage = parseGarage(garagePage);
+    data.garage = garage;
+
     delete data['ss='];
     data.timestamp = Date.now();
     return data;
@@ -67,6 +73,23 @@ function parseSecondPage(page: string) {
     console.log('Error in getMoreInfo', new Error(e))
     return false;
   }
+}
+
+function parseGarage(page: string) {
+  try {
+    page = page.replace('/*</sl:translate_json>*/', '');
+    const garageData = page.substring(page.indexOf('"VehicleCollections":') + 21, page.indexOf('};', page.indexOf('"VehicleCollections":') + 21));
+    const vehicles = JSON.parse(garageData);
+    const parsedVehicles = [];
+    for (const veh of vehicles) {
+        parsedVehicles.push(veh.grg[0]);
+    }
+    return parsedVehicles;
+}
+catch (e) {
+    console.log('Error in parseGarage', new Error(e));
+    return false;
+}
 }
 
 export interface StatsFirstPage {
